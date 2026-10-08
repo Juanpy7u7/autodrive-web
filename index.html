@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="AutoDrive - Catálogo y portal informativo sobre automóviles.">
+    <meta name="author" content="Proyecto AutoDrive">
+
+    <title>AutoDrive | Mundo Automotriz</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         BARRA DE NAVEGACIÓN
+    ========================== -->
+    <header class="header">
+
+        <div class="container nav-container">
+
+            <a href="#inicio" class="logo">
+                <span class="logo-icon">A</span>
+                <span>Auto<span>Drive</span></span>
+            </a>
+
+            <nav class="nav" id="nav">
+                <a href="#inicio" class="nav-link active">Inicio</a>
+                <a href="#vehiculos" class="nav-link">Vehículos</a>
+                <a href="#caracteristicas" class="nav-link">Características</a>
+                <a href="#nosotros" class="nav-link">Nosotros</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </nav>
+
+            <button class="menu-button" id="menuButton" aria-label="Abrir menú">
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         HERO / INICIO
+    ========================== -->
+    <main>
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-overlay"></div>
+
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <p class="hero-subtitle">
+                        PASIÓN • POTENCIA • INNOVACIÓN
+                    </p>
+
+                    <h1>
+                        Descubre el mundo
+                        <span>automotriz</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Explora algunos de los vehículos más interesantes,
+                        conoce sus características y descubre qué hace
+                        especial a cada automóvil.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#vehiculos" class="btn btn-primary">
+                            Explorar vehículos
+                        </a>
+
+                        <a href="#caracteristicas" class="btn btn-secondary">
+                            Conocer más
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ESTADÍSTICAS
+        ========================== -->
+
+        <section class="stats">
+
+            <div class="container stats-grid">
+
+                <div class="stat">
+                    <strong>50+</strong>
+                    <span>Modelos</span>
+                </div>
+
+                <div class="stat">
+                    <strong>10+</strong>
+                    <span>Marcas</span>
+                </div>
+
+                <div class="stat">
+                    <strong>100%</strong>
+                    <span>Pasión</span>
+                </div>
+
+                <div class="stat">
+                    <strong>2026</strong>
+                    <span>Actualizado</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             VEHÍCULOS
+        ========================== -->
+
+        <section class="vehicles section" id="vehiculos">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <p class="section-label">
+                        NUESTRO CATÁLOGO
+                    </p>
+
+                    <h2>
+                        Vehículos destacados
+                    </h2>
+
+                    <p>
+                        Conoce diferentes estilos de automóviles
+                        y encuentra el que más se adapte a tus gustos.
+                    </p>
+
+                </div>
+
+
+                <!-- Filtros -->
+
+                <div class="filters">
+
+                    <button class="filter-button active" data-filter="todos">
+                        Todos
+                    </button>
+
+                    <button class="filter-button" data-filter="deportivo">
+                        Deportivos
+                    </button>
+
+                    <button class="filter-button" data-filter="suv">
+                        SUV
+                    </button>
+
+                    <button class="filter-button" data-filter="clasico">
+                        Clásicos
+                    </button>
+
+                </div>
+
+
+                <!-- Tarjetas -->
+
+                <div class="vehicles-grid" id="vehiclesGrid">
+
+
+                    <!-- VEHÍCULO 1 -->
+
+                    <article class="vehicle-card" data-category="deportivo">
+
+                        <div class="vehicle-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=80"
+                                alt="Automóvil deportivo">
+
+                            <span class="vehicle-category">
+                                Deportivo
+                            </span>
+
+                        </div>
+
+                        <div class="vehicle-info">
+
+                            <p class="vehicle-brand">
+                                PERFORMANCE
+                            </p>
+
+                            <h3>
+                                Speed GT
+                            </h3>
+
+                            <p>
+                                Diseño agresivo, gran potencia
+                                y una experiencia enfocada
+                                completamente en el rendimiento.
+                            </p>
+
+                            <div class="vehicle-specs">
+
+                                <span>
+                                    ⚡ 450 HP
+                                </span>
+
+                                <span>
+                                    🚀 3.8 s
+                                </span>
+
+                                <span>
+                                    ⚙️ Automático
+                                </span>
+
+                            </div>
+
+                            <button class="details-button" data-car="Speed GT">
+                                Ver detalles →
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- VEHÍCULO 2 -->
+
+                    <article class="vehicle-card" data-category="suv">
+
+                        <div class="vehicle-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=900&q=80"
+                                alt="SUV moderno">
+
+                            <span class="vehicle-category">
+                                SUV
+                            </span>
+
+                        </div>
+
+                        <div class="vehicle-info">
+
+                            <p class="vehicle-brand">
+                                ADVENTURE
+                            </p>
+
+                            <h3>
+                                Urban X
+                            </h3>
+
+                            <p>
+                                Un SUV diseñado para combinar
+                                comodidad, espacio y tecnología
+                                para cualquier recorrido.
+                            </p>
+
+                            <div class="vehicle-specs">
+
+                                <span>
+                                    ⚡ 280 HP
+                                </span>
+
+                                <span>
+                                    🚙 AWD
+                                </span>
+
+                                <span>
+                                    👥 5 pasajeros
+                                </span>
+
+                            </div>
+
+                            <button class="details-button" data-car="Urban X">
+                                Ver detalles →
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- VEHÍCULO 3 -->
+
+                    <article class="vehicle-card" data-category="clasico">
+
+                        <div class="vehicle-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=900&q=80"
+                                alt="Automóvil clásico">
+
+                            <span class="vehicle-category">
+                                Clásico
+                            </span>
+
+                        </div>
+
+                        <div class="vehicle-info">
+
+                            <p class="vehicle-brand">
+                                LEGEND
+                            </p>
+
+                            <h3>
+                                Classic 68
+                            </h3>
+
+                            <p>
+                                Un vehículo inspirado en los grandes
+                                diseños clásicos que marcaron
+                                la historia del automóvil.
+                            </p>
+
+                            <div class="vehicle-specs">
+
+                                <span>
+                                    ⚡ 320 HP
+                                </span>
+
+                                <span>
+                                    ⛽ V8
+                                </span>
+
+                                <span>
+                                    🔧 Manual
+                                </span>
+
+                            </div>
+
+                            <button class="details-button" data-car="Classic 68">
+                                Ver detalles →
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- VEHÍCULO 4 -->
+
+                    <article class="vehicle-card" data-category="deportivo">
+
+                        <div class="vehicle-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?auto=format&fit=crop&w=900&q=80"
+                                alt="Auto deportivo rojo">
+
+                            <span class="vehicle-category">
+                                Deportivo
+                            </span>
+
+                        </div>
+
+                        <div class="vehicle-info">
+
+                            <p class="vehicle-brand">
+                                RACING
+                            </p>
+
+                            <h3>
+                                Raptor R
+                            </h3>
+
+                            <p>
+                                Potencia y aerodinámica combinadas
+                                para ofrecer una conducción emocionante.
+                            </p>
+
+                            <div class="vehicle-specs">
+
+                                <span>
+                                    ⚡ 520 HP
+                                </span>
+
+                                <span>
+                                    🚀 3.2 s
+                                </span>
+
+                                <span>
+                                    ⚙️ DCT
+                                </span>
+
+                            </div>
+
+                            <button class="details-button" data-car="Raptor R">
+                                Ver detalles →
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- VEHÍCULO 5 -->
+
+                    <article class="vehicle-card" data-category="suv">
+
+                        <div class="vehicle-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=900&q=80"
+                                alt="SUV de lujo">
+
+                            <span class="vehicle-category">
+                                SUV
+                            </span>
+
+                        </div>
+
+                        <div class="vehicle-info">
+
+                            <p class="vehicle-brand">
+                                LUXURY
+                            </p>
+
+                            <h3>
+                                Grand X
+                            </h3>
+
+                            <p>
+                                Elegancia, tecnología y confort
+                                para quienes buscan una experiencia premium.
+                            </p>
+
+                            <div class="vehicle-specs">
+
+                                <span>
+                                    ⚡ 350 HP
+                                </span>
+
+                                <span>
+                                    🚙 AWD
+                                </span>
+
+                                <span>
+                                    👥 7 pasajeros
+                                </span>
+
+                            </div>
+
+                            <button class="details-button" data-car="Grand X">
+                                Ver detalles →
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- VEHÍCULO 6 -->
+
+                    <article class="vehicle-card" data-category="clasico">
+
+                        <div class="vehicle-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1584345604476-8ec5e12e42dd?auto=format&fit=crop&w=900&q=80"
+                                alt="Automóvil clásico">
+
+                            <span class="vehicle-category">
+                                Clásico
+                            </span>
+
+                        </div>
+
+                        <div class="vehicle-info">
+
+                            <p class="vehicle-brand">
+                                HERITAGE
+                            </p>
+
+                            <h3>
+                                Roadster 70
+                            </h3>
+
+                            <p>
+                                Un diseño inspirado en la época dorada
+                                de los automóviles deportivos clásicos.
+                            </p>
+
+                            <div class="vehicle-specs">
+
+                                <span>
+                                    ⚡ 290 HP
+                                </span>
+
+                                <span>
+                                    ⛽ V8
+                                </span>
+
+                                <span>
+                                    🔧 Manual
+                                </span>
+
+                            </div>
+
+                            <button class="details-button" data-car="Roadster 70">
+                                Ver detalles →
+                            </button>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CARACTERÍSTICAS
+        ========================== -->
+
+        <section class="features section" id="caracteristicas">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <p class="section-label">
+                        ¿POR QUÉ AUTODRIVE?
+                    </p>
+
+                    <h2>
+                        Características
+                    </h2>
+
+                    <p>
+                        Nuestro sitio está diseñado para ofrecer
+                        información clara y sencilla sobre el mundo automotriz.
+                    </p>
+
+                </div>
+
+
+                <div class="features-grid">
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            🚘
+                        </div>
+
+                        <h3>
+                            Variedad
+                        </h3>
+
+                        <p>
+                            Diferentes categorías de vehículos
+                            para conocer diversos estilos y segmentos.
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            ⚡
+                        </div>
+
+                        <h3>
+                            Rendimiento
+                        </h3>
+
+                        <p>
+                            Información sobre potencia, aceleración
+                            y características de rendimiento.
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            🛠️
+                        </div>
+
+                        <h3>
+                            Tecnología
+                        </h3>
+
+                        <p>
+                            Conoce tecnologías y sistemas que
+                            forman parte de los vehículos modernos.
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            🌎
+                        </div>
+
+                        <h3>
+                            Innovación
+                        </h3>
+
+                        <p>
+                            Una mirada al futuro de la industria
+                            automotriz y sus nuevas tendencias.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             NOSOTROS
+        ========================== -->
+
+        <section class="about section" id="nosotros">
+
+            <div class="container about-grid">
+
+                <div class="about-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1493238792000-8113da705763?auto=format&fit=crop&w=1000&q=80"
+                        alt="Automóvil en carretera">
+
+                </div>
+
+                <div class="about-content">
+
+                    <p class="section-label">
+                        SOBRE EL PROYECTO
+                    </p>
+
+                    <h2>
+                        Más que automóviles,
+                        una pasión.
+                    </h2>
+
+                    <p>
+                        AutoDrive es un proyecto web creado para
+                        presentar información relacionada con el
+                        mundo automotriz mediante una interfaz
+                        moderna, atractiva y fácil de utilizar.
+                    </p>
+
+                    <p>
+                        El proyecto integra tecnologías de desarrollo
+                        web como HTML, CSS y JavaScript, además de
+                        utilizar herramientas de control de versiones
+                        para gestionar los cambios realizados durante
+                        su desarrollo.
+                    </p>
+
+                    <a href="#contacto" class="btn btn-primary">
+                        Contáctanos
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACTO
+        ========================== -->
+
+        <section class="contact section" id="contacto">
+
+            <div class="container">
+
+                <div class="contact-box">
+
+                    <div>
+
+                        <p class="section-label">
+                            CONTACTO
+                        </p>
+
+                        <h2>
+                            ¿Tienes alguna pregunta?
+                        </h2>
+
+                        <p>
+                            Envíanos un mensaje y estaremos
+                            encantados de ayudarte.
+                        </p>
+
+                    </div>
+
+                    <form id="contactForm" class="contact-form">
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Tu nombre"
+                            required
+                        >
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Tu correo electrónico"
+                            required
+                        >
+
+                        <textarea
+                            id="message"
+                            rows="5"
+                            placeholder="Escribe tu mensaje..."
+                            required
+                        ></textarea>
+
+                        <button type="submit" class="btn btn-primary">
+                            Enviar mensaje
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <div>
+
+                <a href="#inicio" class="logo">
+                    <span class="logo-icon">A</span>
+                    <span>Auto<span>Drive</span></span>
+                </a>
+
+                <p>
+                    Explorando el mundo de los automóviles.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Navegación
+                </h3>
+
+                <a href="#inicio">Inicio</a>
+                <a href="#vehiculos">Vehículos</a>
+                <a href="#caracteristicas">Características</a>
+                <a href="#nosotros">Nosotros</a>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Proyecto
+                </h3>
+
+                <p>
+                    Desarrollo web con HTML, CSS,
+                    JavaScript y Git.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © <span id="currentYear"></span> AutoDrive.
+                Proyecto académico.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+         MODAL
+    ========================== -->
+
+    <div class="modal" id="carModal">
+
+        <div class="modal-content">
+
+            <button class="modal-close" id="modalClose">
+                ×
+            </button>
+
+            <p class="section-label">
+                INFORMACIÓN DEL VEHÍCULO
+            </p>
+
+            <h2 id="modalTitle">
+                Vehículo
+            </h2>
+
+            <p id="modalDescription">
+                Información del vehículo.
+            </p>
+
+            <div class="modal-specs">
+
+                <div>
+                    <strong>Motor</strong>
+                    <span>Alto rendimiento</span>
+                </div>
+
+                <div>
+                    <strong>Transmisión</strong>
+                    <span>Automática</span>
+                </div>
+
+                <div>
+                    <strong>Diseño</strong>
+                    <span>Moderno</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
